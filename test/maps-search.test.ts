@@ -2,8 +2,7 @@ import { config } from "dotenv";
 import { describe } from "@jest/globals";
 import { getPlaceAutocomplete } from "../src/maps-api";
 import { getAutoCompleteDetails } from "../src";
-import { DEFAULT_COUNTRY_SET } from "../src/utilities/constants";
-import { ERRORS } from "../src/utilities/error-messages";
+import { DEFAULT_COUNTRY_SET, ERRORS } from "../src/utilities";
 
 config();
 

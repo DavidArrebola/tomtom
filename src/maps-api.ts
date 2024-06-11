@@ -1,8 +1,6 @@
 import axios from "axios";
 import { FuzzySearchResponse, PlaceDetails } from "./types";
-import { BASE_URL } from "./utilities/constants";
-import { setParams } from "./utilities/set-params";
-import { ERRORS } from "./utilities/error-messages";
+import { BASE_URL, setParams, ERRORS } from "./utilities";
 
 export async function getPlaceAutocomplete(
   address: string,

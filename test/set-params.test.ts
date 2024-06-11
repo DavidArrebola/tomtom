@@ -2,9 +2,9 @@ import {
   DEFAULT_COUNTRY_SET,
   DEFAULT_LIMIT,
   DEFAULT_TYPEAHEAD,
-} from "../src/utilities/constants";
-import { setApiKey } from "../src/utilities/set-api-key";
-import { setParams } from "../src/utilities/set-params";
+  setApiKey,
+  setParams,
+} from "../src/utilities";
 
 jest.mock("../src/utilities/set-api-key");
 

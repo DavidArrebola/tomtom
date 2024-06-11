@@ -1,5 +1,4 @@
-import { ERRORS } from "../src/utilities/error-messages";
-import { setApiKey } from "../src/utilities/set-api-key";
+import { ERRORS, setApiKey } from "../src/utilities";
 
 describe("setApiKey", () => {
   const originalEnv = process.env;
