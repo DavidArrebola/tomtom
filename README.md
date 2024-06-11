@@ -11,12 +11,12 @@ The project was structured to enhance modularity by separating concerns and prom
 
 ## API Key Management
 
-Centralized API key management to ensure secure and consistent handling, minimizing risks and redundancy.
+Centralised API key management to ensure secure and consistent handling, minimising risks and redundancy.
 
 **Key Points:**
 
-- **Centralized Management**: `setApiKey` function retrieves and validates the API key from environment variables.
-- **Secure Handling**: Centralized approach minimizes exposure of the API key.
+- **Centralised Management**: `setApiKey` function retrieves and validates the API key from environment variables.
+- **Secure Handling**: Centralised approach minimises exposure of the API key.
 
 ## Naming Conventions and Code Consistency
 
@@ -30,7 +30,7 @@ Maintained consistency in naming conventions and function declarations for a cle
 
 ## Flexibility for Consumers
 
-Designed to allow additional parameters, ensuring the package can be easily customized and extended.
+Designed to allow additional parameters, ensuring the package can be easily customised and extended.
 
 **Key Points:**
 
@@ -45,3 +45,19 @@ Focused on good test coverage to ensure reliability, facilitated by the modular 
 
 - **Unit Tests**: Isolated tests for individual functions and modules.
 - **End-to-End Tests**: Verified overall functionality with the TomTom API integration.
+
+## Patching Package Vulnerabilities
+During development, several package vulnerabilities were identified and patched to ensure the security and stability of the project. Running `yarn audit` revealed issues with `axios` and `braces`.
+
+**Identified Vulnerabilities:**
+- **Axios Cross-Site Request Forgery Vulnerability**
+  - **Patched in**: `>=0.28.0`
+  - **More Info**: [Axios Advisory](https://www.npmjs.com/advisories/1096525)
+
+- **Uncontrolled Resource Consumption in Braces**
+  - **Patched in**: `>=3.0.3`
+  - **More Info**: [Braces Advisory](https://www.npmjs.com/advisories/1097496)
+
+**Resolution:**
+- Updated dependencies in `package.json` to the patched versions.
+- No vulnerabilities are present after the updates.
